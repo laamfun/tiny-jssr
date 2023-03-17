@@ -25,7 +25,7 @@ const item = (e) => html`<div link>${e}</div>`;
 const Header = () =>
   html`<header>
     <${style} />
-    <${navs.loop(item)} />
+    <${navs.map(item)} />
     <${handle} />
   </header>`;
 
